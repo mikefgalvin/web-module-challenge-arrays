@@ -184,9 +184,26 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+//Checks every string for matches the input
+//returns any matches to a filteredArray
+//return that new array
+// parameters are placeholder values - have no value until function in invoked 
+// arguments have actual values and take the place of the parameter 
+// console.log() - this lets us see what the result of our code would be in the console 
+// return - actuall gives us a back a value 
+
+function filterByWord(flavors, name){
+    let filteredArray = [];
+    for(let i = 0; i < flavors.length; i++){
+        if(flavors[i].includes(name)){
+        //    filteredArray = flavors.slice(i, 1);
+            filteredArray = flavors.push(flavors[i]);
+        }
+    }
+    return filteredArray; 
 }
+
+    console.log('chocolate day', filterByWord(originalFlavors, "Chocolate"));
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
