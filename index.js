@@ -197,13 +197,13 @@ function filterByWord(flavors, name){
     for(let i = 0; i < flavors.length; i++){
         if(flavors[i].includes(name)){
         //    filteredArray = flavors.slice(i, 1);
-            filteredArray = flavors.push(flavors[i]);
+            filteredArray.push(flavors[i]);
         }
     }
     return filteredArray; 
 }
 
-    console.log('chocolate day', filterByWord(originalFlavors, "Chocolate"));
+//     console.log('chocolate day', filterByWord(originalFlavors, "Chocolate"));
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
